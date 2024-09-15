@@ -1,0 +1,49 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krongol</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Favicon Link -->
+    <link rel="icon" type="image/png" href="/logo.png">
+</head>
+<body>
+    <!-- Logo at Top Left -->
+    <div class="logo-container">
+        <img src="/logo.png" alt="Krongol Logo" class="logo-icon">
+    </div>
+
+    <!-- Settings and Create Query Buttons -->
+    <div class="top-right">
+        <a href="/create-a-query" class="create-query-btn">Create a query</a>
+        <button id="settings-btn" class="settings-btn">⚙️</button>
+    </div>
+
+    <div class="container">
+        <h1 class="logo">Krongol</h1>
+        <form action="/search" method="get" class="search-form">
+            <input type="text" name="query" class="search-box" placeholder="Search">
+        </form>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Settings</h2>
+            <label class="toggle-container">
+                Dark Mode
+                <div class="toggle-switch">
+                    <input type="checkbox" id="dark-mode-toggle" class="toggle-input">
+                    <span class="slider"></span>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

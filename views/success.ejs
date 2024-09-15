@@ -1,0 +1,45 @@
+<!-- views/success.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Created - Krongol</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" type="image/png" href="/logo.png">
+</head>
+<body>
+    <!-- Logo at Top Right -->
+    <div class="logo-container">
+        <img src="/logo.png" alt="Krongol Logo" class="logo-icon">
+    </div>
+
+    <!-- Settings Button -->
+    <div class="settings-container">
+        <button id="settings-btn" class="settings-btn">⚙️</button>
+    </div>
+
+    <div class="container">
+        <h1>Your query was created! 🥳</h1>
+        <a href="/" class="back-to-home-btn">Back to Home</a>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="settings-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Settings</h2>
+            <label class="toggle-container">
+                Dark Mode
+                <div class="toggle-switch">
+                    <input type="checkbox" id="dark-mode-toggle" class="toggle-input">
+                    <span class="slider"></span>
+                </div>
+            </label>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
